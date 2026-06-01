@@ -1,0 +1,128 @@
+/* Título principal da página, centralizado e com cor destacada */
+.titulo {
+    color: #ffcc66;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 50px;
+}
+
+/* Subtítulo complementar, alinhado ao centro */
+.subtitulo {
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 30px;
+}
+
+/* Parágrafo principal com margem ampla para leitura centralizada */
+.texto {
+    display: block;
+    color: white;
+    text-align: center;
+    margin-left: 450px;
+    margin-right: 450px;
+    margin-top: 5px;
+    font-size: 25px;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Botão de menu posicionado no canto superior direito */
+.menu{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 60px;
+    height: 60px;
+}
+
+/* Define o fundo da página */
+.body{
+    background-color: maroon;
+}
+
+/* Imagem principal da pizza, posicionada e destacada na tela */
+.foto_pizza {
+    position: absolute;
+    text-align: center;
+    margin-left: -390px;
+    top: 50px;
+    bottom: 50px;
+    width: 800px;
+    height: auto;
+}
+
+/* Rodapé com texto centralizado */
+.rodape{
+    text-align: center;
+    color: white;
+    bottom: -10px;
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Texto de boas-vindas estilizado com fonte cursiva */
+.boasvindas{
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 25px;
+    font-family: 'Dancing Script', cursive;
+}
+
+/* Classe para links estilizados como botões */
+.botazul{
+    text-align: center;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Imagem usada como botão centralizado */
+.img-botao {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+}
+
+/* Caixa do menu dropdown com borda e sombra */
+.dropdown {
+  position: absolute;
+  top: 100px;
+  right: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Estilo dos links dentro do dropdown */
+.dropdown a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 6px;
+}
+
+/* Efeito ao passar o mouse sobre os links do menu */
+.dropdown a:hover {
+  background-color: #f2f2f2;
+}
+
+/* Efeito de rotação suave na imagem da pizza */
+.foto_pizza {
+  position: absolute;
+  text-align: center;
+  margin-left: -390px;
+  top: 50px;
+  bottom: 50px;
+  width: 800px;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+
+/* Rotação leve quando o usuário passa o mouse pela pizza */
+.foto_pizza:hover {
+  transform: rotate(10deg);
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Configuração básica da página e codificação -->
+  <meta charset="UTF-8">
+  <title>Contato - Pizzaria da Nonna</title>
+
+  <!-- Importa o CSS principal do site -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Fontes utilizadas na estilização da página -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+  <!-- Estilos exclusivos da página de contato -->
+  <style>
+    /* Área principal onde o conteúdo é exibido */
+    main {
+      text-align: center;
+      margin: 80px auto;
+      width: 80%;
+      color: #fffaf2;
+      font-family: 'Playfair Display', serif;
+    }
+
+    /* Título principal da página */
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 45px;
+      color: #ffcc66;
+      margin-bottom: 20px;
+    }
+
+    /* Texto introdutório */
+    p {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    /* Estrutura geral do formulário */
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      width: 60%;
+      margin: 0 auto;
+    }
+
+    /* Campos de texto e área de mensagem */
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      font-family: 'Playfair Display', serif;
+    }
+
+    /* Botão de envio do formulário */
+    button {
+      background-color: #ffcc66;
+      color: #5b0a0a;
+      font-weight: bold;
+      border: none;
+      padding: 10px 25px;
+      border-radius: 10px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    /* Efeito visual ao passar o mouse no botão */
+    button:hover {
+      background-color: #ffdb85;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body class="body">
+  <!-- Menu lateral reutilizado do layout principal -->
+  <div id="menuDropdown" class="dropdown">
+    <a href="index.html">Início</a><br>
+    <a href="cardapio.html">Cardápio</a><br>
+    <a href="contato.html">Contato</a><br>
+    <a href="privacidade.html">Privacidade</a>
+  </div>
+
+  <main>
+    <!-- Título da seção de contato -->
+    <h1>Fale Conosco 🍕</h1>
+
+    <!-- Texto explicativo da finalidade do formulário -->
+    <p>
+      Tem alguma dúvida, sugestão ou elogio?<br>
+      Envie sua mensagem para a <strong>Pizzaria da Nonna</strong>!
+    </p>
+
+    <!-- Formulário para envio de mensagens -->
+    <form action="#" method="post">
+      <!-- Campo de nome do usuário -->
+      <input type="text" name="nome" placeholder="Seu nome" required>
+
+      <!-- Campo de e-mail -->
+      <input type="email" name="email" placeholder="Seu e-mail" required>
+
+      <!-- Área para mensagem personalizada -->
+      <textarea name="mensagem" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
+
+      <!-- Botão de envio do formulário -->
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+
+  <footer>
+    <!-- Rodapé com direitos autorais -->
+    <p class="rodape">© 2025 Pizzaria da Nonna
