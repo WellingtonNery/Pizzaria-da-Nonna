@@ -1,4 +1,4 @@
-# Pizzaria da Nonna
+<img width="2172" height="724" alt="pizzaria" src="https://github.com/user-attachments/assets/692ddac3-9703-45a8-ad04-53be141d5178" />
 
 Este site foi desenvolvido como projeto final da disciplina de **Desenvolvimento Web**. O projeto consiste em um site para uma pizzaria fictícia chamada **Pizzaria da Nonna**.
 
