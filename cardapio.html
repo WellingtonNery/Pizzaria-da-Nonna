@@ -1,20 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <!-- Define configuração básica de codificação e título da página -->
   <meta charset="UTF-8">
   <title>Cardápio - Pizzaria da Nonna</title>
 
-  <!-- Arquivo CSS principal do site -->
   <link rel="stylesheet" href="style.css">
 
-  <!-- Fontes externas para estilização personalizada -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 
-  <!-- Estilos específicos desta página (cardápio) -->
   <style>
-    /* Área central onde o conteúdo do cardápio é exibido */
     main {
       text-align: center;
       margin: 80px auto;
@@ -23,7 +18,6 @@
       font-family: 'Playfair Display', serif;
     }
 
-    /* Título principal do cardápio */
     h1 {
       font-family: 'Dancing Script';
       font-size: 60px;
@@ -32,14 +26,12 @@
       text-shadow: 2px 2px 10px rgba(255, 204, 102, 0.5);
     }
 
-    /* Subtítulos das categorias (pizzas, especiais, bebidas) */
     h2 {
       color: #fffaf2;
       margin-top: 50px;
       font-size: 30px;
     }
 
-    /* Contêiner que organiza os itens do cardápio lado a lado */
     .cardapio-container {
       display: flex;
       flex-wrap: wrap;
@@ -48,52 +40,44 @@
       margin-top: 30px;
     }
 
-    /* Estrutura individual de cada item da lista */
     .item {
       width: 180px;
       text-align: center;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    /* Efeito de destaque ao passar o mouse sobre o item */
     .item:hover {
       transform: scale(1.08);
     }
 
-    /* Imagens dos itens do cardápio */
     .item img {
       width: 160px;
       height: 160px;
       object-fit: cover;
-      border-radius: 50%; /* utilizado para manter pizzas redondas */
+      border-radius: 50%;
       transition: transform 0.4s ease, filter 0.4s ease;
     }
 
-    /* Efeito extra nas imagens ao passar o mouse (zoom e brilho) */
     .item img:hover {
       transform: scale(1.1);
       filter: brightness(1.2);
     }
 
-    /* Formato circular exclusivo para imagens de pizza */
     .pizza-img {
       border-radius: 50%;
     }
 
-    /* Formato retangular usado nas imagens de bebidas */
     .bebida-img {
       width: 120px;
       height: 180px;
       border-radius: 10px;
     }
 
-    /* Nome das pizzas/bebidas abaixo das imagens */
     .item p {
       margin-top: 15px;
       font-size: 18px;
     }
 
-    /* Estilização do rodapé */
     footer {
       margin-top: 50px;
       font-size: 15px;
@@ -103,7 +87,6 @@
 </head>
 
 <body class="body">
-  <!-- Menu suspenso reutilizado do layout principal -->
   <div id="menuDropdown" class="dropdown">
     <a href="index.html">Início</a><br>
     <a href="cardapio.html">Cardápio</a><br>
@@ -112,69 +95,63 @@
   </div>
 
   <main>
-    <!-- Título da seção do cardápio -->
     <h1>Nosso Cardápio 🍕</h1>
 
-    <!-- Categoria das pizzas tradicionais -->
     <h2>Pizzas Tradicionais</h2>
     <div class="cardapio-container">
-      <!-- Cada bloco representa uma pizza com imagem e nome -->
       <div class="item">
-        <img src="pizza_mussarela-removebg-preview.png" alt="Pizza Mussarela" class="pizza-img">
+        <img src="Imagens/Alimentos_Bebidas/mussarela.png" alt="Pizza Mussarela" class="pizza-img">
         <p>🍕 Mussarela</p>
       </div>
       <div class="item">
-        <img src="pizza_calabresa-removebg-preview.png" alt="Pizza Calabresa" class="pizza-img">
+        <img src="Imagens/Alimentos_Bebidas/calabresa.png" alt="Pizza Calabresa" class="pizza-img">
         <p>🍕 Calabresa</p>
       </div>
       <div class="item">
-        <img src="pizza_portuguesa-removebg-preview.png" alt="Pizza Portuguesa" class="pizza-img">
+        <img src="Imagens/Alimentos_Bebidas/portuguesa.png" alt="Pizza Portuguesa" class="pizza-img">
         <p>🍕 Portuguesa</p>
       </div>
       <div class="item">
-        <img src="pizza_marguerita-removebg-preview.png" alt="Pizza Marguerita" class="pizza-img">
+        <img src="Imagens/Alimentos_Bebidas/marguerita.png" alt="Pizza Marguerita" class="pizza-img">
         <p>🍕 Marguerita</p>
       </div>
     </div>
 
-    <!-- Categoria das pizzas especiais da casa -->
     <h2>Especiais da Nonna</h2>
     <div class="cardapio-container">
       <div class="item">
-        <img src="pizza_quatroq-removebg-preview.png" alt="Pizza 4 Queijos" class="pizza-img">
+        <img src="Imagens/Alimentos_Bebidas/quatro-queijos.png" alt="Pizza 4 Queijos" class="pizza-img">
         <p>🍕 Quatro Queijos</p>
       </div>
       <div class="item">
-        <img src="frango-removebg-preview.png" alt="Pizza Frango com Catupiry" class="pizza-img">
+        <img src="Imagens/Alimentos_Bebidas/frango.png" alt="Pizza Frango com Catupiry" class="pizza-img">
         <p>🍕 Frango com Catupiry</p>
       </div>
       <div class="item">
-        <img src="pizza_pepperoni-removebg-preview.png" alt="Pizza Pepperoni" class="pizza-img">
+        <img src="Imagens/Alimentos_Bebidas/pepperoni.png" alt="Pizza Pepperoni" class="pizza-img">
         <p>🍕 Pepperoni</p>
       </div>
     </div>
 
-    <!-- Categoria de bebidas -->
     <h2>Bebidas 🥤</h2>
     <div class="cardapio-container">
       <div class="item">
-        <img src="coca-removebg-preview - Copia.png" alt="Coca-Cola" class="bebida-img">
+        <img src="Imagens/Alimentos_Bebidas/coca-cola.png" alt="Coca-Cola" class="bebida-img">
         <p>🥤 Coca-Cola</p>
       </div>
       <div class="item">
-        <img src="guarana-removebg-preview - Copia.png" alt="Guaraná Antarctica" class="bebida-img">
+        <img src="Imagens/Alimentos_Bebidas/guarana.png" alt="Guaraná Antarctica" class="bebida-img">
         <p>🥤 Guaranã Antarctica</p>
       </div>
       <div class="item">
-        <img src="fanta-removebg-preview - Copia.png" alt="Fanta Laranja" class="bebida-img">
+        <img src="Imagens/Alimentos_Bebidas/fanta.png" alt="Fanta Laranja" class="bebida-img">
         <p>🥤 Fanta Laranja</p>
       </div>
     </div>
   </main>
 
   <footer>
-    <!-- Informações de direitos autorais -->
-    <p>© 2025 Pizzaria da Nonna. Todos os direitos reservados.</p>
+    <p class = "rodape">© 2025 Pizzaria da Nonna. Todos os direitos reservados.</p>
   </footer>
 </body>
 </html>
